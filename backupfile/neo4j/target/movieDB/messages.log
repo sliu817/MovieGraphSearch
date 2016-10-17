@@ -1,0 +1,605 @@
+2014-02-24 19:53:49.226+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2014-02-24 19:53:49.251+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=313M
+    neostore.nodestore.db.mapped_memory=86M
+    neostore.relationshipstore.db.mapped_memory=383M
+    neostore.propertystore.db.strings.mapped_memory=266M
+    store_dir=/home/fograinwind/workspace/neo4j/target/movieDB
+    neostore.propertystore.db.arrays.mapped_memory=301M
+    ephemeral=false
+2014-02-24 19:53:49.280+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    LINUX_SCHEDULERS
+    NETWORK
+2014-02-24 19:53:49.282+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 3.87 GB
+    Free Physical memory: 2.49 GB
+    Committed virtual memory: 1.17 GB
+    Total swap space: 4.09 GB
+    Free swap space: 4.09 GB
+2014-02-24 19:53:49.293+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 45.90 MB
+    Total memory: 59.94 MB
+    Max   memory: 958.94 MB
+    Garbage Collector: Copy: [Eden Space, Survivor Space]
+    Garbage Collector: MarkSweepCompact: [Eden Space, Survivor Space, Tenured Gen, Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=463.00 kB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: Eden Space (Heap memory): committed=16.50 MB, used=14.03 MB, max=264.50 MB, threshold=?
+    Memory Pool: Survivor Space (Heap memory): committed=2.06 MB, used=0.00 B, max=33.06 MB, threshold=?
+    Memory Pool: Tenured Gen (Heap memory): committed=41.38 MB, used=0.00 B, max=661.38 MB, threshold=0.00 B
+    Memory Pool: Perm Gen (Non-heap memory): committed=20.75 MB, used=6.06 MB, max=82.00 MB, threshold=0.00 B
+2014-02-24 19:53:49.324+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Linux; version: 3.2.0-4-amd64; arch: amd64; cpus: 1
+    Max number of file descriptors: 4096
+    Number of open file descriptors: 29
+    Process id: 3406@crunchbang
+    Byte order: LITTLE_ENDIAN
+    Local timezone: US/Pacific
+2014-02-24 19:53:49.348+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 24.45-b08
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Dfile.encoding=UTF-8]
+2014-02-24 19:53:49.355+0000 INFO  [org.neo4j]: Java classpath:
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/neo4j-cypher-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/parboiled-scala_2.10-1.1.6.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/neo4j-kernel-2.0.1.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/jce.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/neo4j-jmx-2.0.1.jar
+     [loader.1] file:/usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/ext/zipfs.jar
+     [loader.1] file:/usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/ext/dnsns.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/bin/
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/neo4j-cypher-commons-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/geronimo-jta_1.1_spec-1.1.1.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/commons-codec-1.9.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/commons-logging-1.1.3.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/neo4j-udc-2.0.1.jar
+     [loader.1] file:/usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/ext/sunjce_provider.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/jfr.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/commons-httpclient-3.1.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/neo4j-cypher-compiler-2.0-2.0.1.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/rt.jar
+     [loader.1] file:/usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/ext/localedata.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/jsse.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/neo4j-server-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/parboiled-core-1.1.6.jar
+     [loader.1] file:/usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/ext/sunpkcs11.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/neo4j-shell-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/neo4j-cypher-compiler-1.9-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/neo4j-lucene-index-2.0.1.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/classes
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/server-api-2.0.1.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/resources.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/neo4j-graph-algo-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/lucene-core-3.6.2.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/charsets.jar
+     [loader.1] file:/usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/ext/sunec.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/concurrentlinkedhashmap-lru-1.3.1.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/neo4j-graph-matching-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/javax.servlet.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/sunrsasign.jar
+     [classpath + loader.0] file:/home/fograinwind/downloads/neo4j-community-2.0.1/lib2/scala-library-2.10.3.jar
+2014-02-24 19:53:49.358+0000 INFO  [org.neo4j]: Library path:
+    /usr/java/packages/lib/amd64
+    /usr/lib64
+    /lib64
+    /lib
+    /usr/lib
+2014-02-24 19:53:49.363+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/amd64
+    path.separator = :
+    file.encoding.pkg = sun.io
+    user.country = US
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = unknown
+    user.dir = /home/fograinwind/workspace/neo4j
+    sun.jnu.encoding = UTF-8
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    user.home = /home/fograinwind
+    user.timezone = US/Pacific
+    file.encoding = UTF-8
+    user.name = fograinwind
+    sun.java.command = movieRecommendation.neo4j.CypherLoader
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = sun.awt.X11.XToolkit
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.cpu.isalist = 
+2014-02-24 19:53:49.364+0000 INFO  [org.neo4j]: Linux scheduler information:
+    noop deadline [cfq] 
+    noop deadline [cfq] 
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+2014-02-24 19:53:49.369+0000 INFO  [org.neo4j]: Network information:
+    Interface eth0:
+        address: fe80:0:0:0:a00:27ff:fe23:c3a6%2
+        address: 10.0.2.15
+    Interface lo:
+        address: 0:0:0:0:0:0:0:1%1
+        address: 127.0.0.1
+2014-02-24 19:53:49.370+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2014-02-24 19:53:49.611+0000 INFO  [org.neo4j]: Creating new db @ /home/fograinwind/workspace/neo4j/target/movieDB/neostore
+2014-02-24 19:53:49.740+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-24 19:53:49.741+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-24 19:53:49.744+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.748+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.771+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-24 19:53:49.772+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-24 19:53:49.774+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db.names hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.779+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.793+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-24 19:53:49.811+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-24 19:53:49.811+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-24 19:53:49.815+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-24 19:53:49.816+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.strings] brickCount=0 brickSize=278912b mappedMem=278921216b (storeSize=128b)
+2014-02-24 19:53:49.816+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-24 19:53:49.817+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-24 19:53:49.817+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.arrays] brickCount=0 brickSize=315520b mappedMem=315621376b (storeSize=128b)
+2014-02-24 19:53:49.831+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db] brickCount=0 brickSize=3282009b mappedMem=328204288b (storeSize=0b)
+2014-02-24 19:53:49.838+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshipstore.db] brickCount=0 brickSize=4016034b mappedMem=401604608b (storeSize=0b)
+2014-02-24 19:53:49.838+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2014-02-24 19:53:49.839+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.nodestore.db] brickCount=0 brickSize=901768b mappedMem=90177536b (storeSize=0b)
+2014-02-24 19:53:49.840+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=64b)
+2014-02-24 19:53:49.840+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-24 19:53:49.856+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.860+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.870+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db.names hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.874+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.879+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.890+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.index.keys hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.894+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.index hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.902+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.907+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.912+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshipstore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.919+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.nodestore.db.labels hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:49.924+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.nodestore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:50.004+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.schemastore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-24 19:53:50.011+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore hit=0 miss=8 switches=0 ooe=0
+2014-02-24 19:53:50.018+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-24 19:53:50.018+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-24 19:53:50.018+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-24 19:53:50.019+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-24 19:53:50.019+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.strings] brickCount=0 brickSize=278912b mappedMem=278921216b (storeSize=128b)
+2014-02-24 19:53:50.019+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2014-02-24 19:53:50.019+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2014-02-24 19:53:50.020+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.arrays] brickCount=0 brickSize=315520b mappedMem=315621376b (storeSize=128b)
+2014-02-24 19:53:50.020+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db] brickCount=0 brickSize=3282009b mappedMem=328204288b (storeSize=0b)
+2014-02-24 19:53:50.020+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshipstore.db] brickCount=0 brickSize=4016034b mappedMem=401604608b (storeSize=0b)
+2014-02-24 19:53:50.020+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2014-02-24 19:53:50.021+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.nodestore.db] brickCount=0 brickSize=901768b mappedMem=90177536b (storeSize=0b)
+2014-02-24 19:53:50.021+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=64b)
+2014-02-24 19:53:50.021+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=63b)
+2014-02-24 19:53:50.071+0000 INFO  [org.neo4j]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2014-02-24 19:53:50.125+0000 INFO  [org.neo4j]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2014-02-24 19:53:50.227+0000 INFO  [org.neo4j]: Opened logical log [/home/fograinwind/workspace/neo4j/target/movieDB/nioneo_logical.log.1] version=0, lastTxId=1 (clean)
+2014-02-24 19:53:50.236+0000 INFO  [org.neo4j]: Rebuilding lucene scan store, this may take a while
+2014-02-24 19:53:50.237+0000 INFO  [org.neo4j]: Lucene scan store rebuilt (roughly -1 nodes)
+2014-02-24 19:53:50.248+0000 INFO  [org.neo4j]: TM new log: tm_tx_log.1
+2014-02-24 19:53:50.276+0000 INFO  [org.neo4j]: Opened logical log [/home/fograinwind/workspace/neo4j/target/movieDB/index/lucene.log.1] version=0, lastTxId=1 (clean)
+2014-02-24 19:53:50.283+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-02-24 19:53:50.283+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1393271629625, id:-230417281327537827, store version: 13843131341501958]
+2014-02-24 19:53:50.283+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.0.1
+2014-02-24 19:53:50.283+0000 INFO  [org.neo4j]: Neo4j component versions:
+2014-02-24 19:53:50.290+0000 INFO  [org.neo4j]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:53:50.290+0000 INFO  [org.neo4j]:   Neo4j - JMX support (neo4j-jmx), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:53:50.290+0000 INFO  [org.neo4j]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:53:50.290+0000 INFO  [org.neo4j]:   Neo4j Server API (server-api), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:53:50.290+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:53:50.290+0000 INFO  [org.neo4j]:   Neo4j - Cypher (neo4j-cypher), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:53:50.292+0000 INFO  [org.neo4j]:   Neo4j Server (neo4j-server), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:53:50.292+0000 INFO  [org.neo4j]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:53:50.303+0000 INFO  [org.neo4j]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:53:50.303+0000 INFO  [org.neo4j]:   Neo4j - Generic shell (neo4j-shell), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:53:50.303+0000 INFO  [org.neo4j]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:53:50.303+0000 INFO  [org.neo4j]:   neo4j-udc, version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:53:50.303+0000 INFO  [org.neo4j]:   Neo4j - Cypher Commons (neo4j-cypher-commons), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:53:50.303+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-02-24 19:53:50.305+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-02-24 19:53:50.305+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.1
+      SchemaStore v0.A.1
+      NodeStore v0.A.1
+      RelationshipStore v0.A.1
+      RelationshipTypeStore v0.A.1
+      LabelTokenStore v0.A.1
+      PropertyStore v0.A.1
+      PropertyIndexStore v0.A.1
+      StringPropertyStore v0.A.1
+      ArrayPropertyStore v0.A.1
+2014-02-24 19:53:50.311+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-02-24 19:53:50.311+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-02-24 19:53:50.311+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      SchemaStore: used=1 high=0
+      NodeStore: used=0 high=-1
+      RelationshipStore: used=0 high=-1
+      RelationshipTypeStore: used=0 high=-1
+      LabelTokenStore: used=0 high=-1
+      PropertyStore: used=0 high=-1
+      PropertyIndexStore: used=0 high=-1
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+2014-02-24 19:53:50.312+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-02-24 19:53:50.312+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-02-24 19:53:50.312+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-02-24 19:53:50.313+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-02-24 19:53:50.313+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 101360168960 / 92085022720 / 90
+Storage files: (filename : modification date - size)
+      neostore.relationshiptypestore.db.names: 2014-02-24T11:53:50-0800 - 38.00 B
+      neostore.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      neostore.nodestore.db.labels.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      neostore.relationshipstore.db.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      neostore.labeltokenstore.db.names.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      neostore.propertystore.db: 2014-02-24T11:53:50-0800 - 0.00 B
+      neostore.relationshiptypestore.db.names.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      neostore.labeltokenstore.db.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      neostore.propertystore.db.arrays: 2014-02-24T11:53:50-0800 - 128.00 B
+      schema:
+        label:
+          lucene:
+            write.lock: 2014-02-24T11:53:50-0800 - 0.00 B
+          - Total: 2014-02-24T11:53:50-0800 - 0.00 B
+        - Total: 2014-02-24T11:53:50-0800 - 0.00 B
+      - Total: 2014-02-24T11:53:50-0800 - 0.00 B
+      neostore.nodestore.db.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      neostore.propertystore.db.strings.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      neostore.relationshiptypestore.db.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      neostore.nodestore.db: 2014-02-24T11:53:50-0800 - 0.00 B
+      messages.log: 2014-02-24T11:53:50-0800 - 21.26 kB
+      neostore.propertystore.db.index: 2014-02-24T11:53:50-0800 - 0.00 B
+      neostore.propertystore.db.index.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      neostore.labeltokenstore.db: 2014-02-24T11:53:50-0800 - 0.00 B
+      neostore.labeltokenstore.db.names: 2014-02-24T11:53:50-0800 - 38.00 B
+      tm_tx_log.1: 2014-02-24T11:53:50-0800 - 0.00 B
+      neostore.schemastore.db: 2014-02-24T11:53:50-0800 - 64.00 B
+      active_tx_log: 2014-02-24T11:53:50-0800 - 11.00 B
+      neostore.nodestore.db.labels: 2014-02-24T11:53:50-0800 - 68.00 B
+      nioneo_logical.log.active: 2014-02-24T11:53:50-0800 - 4.00 B
+      neostore.schemastore.db.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      neostore.propertystore.db.arrays.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      index:
+        lucene.log.active: 2014-02-24T11:53:50-0800 - 4.00 B
+        lucene-store.db: 2014-02-24T11:53:50-0800 - 40.00 B
+        lucene.log.1: 2014-02-24T11:53:50-0800 - 16.00 B
+      - Total: 2014-02-24T11:53:50-0800 - 60.00 B
+      neostore: 2014-02-24T11:53:50-0800 - 63.00 B
+      neostore.relationshipstore.db: 2014-02-24T11:53:50-0800 - 0.00 B
+      lock: 2014-02-24T11:53:50-0800 - 0.00 B
+      neostore.propertystore.db.index.keys: 2014-02-24T11:53:50-0800 - 38.00 B
+      nioneo_logical.log.1: 2014-02-24T11:53:50-0800 - 16.00 B
+      neostore.propertystore.db.index.keys.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      neostore.propertystore.db.strings: 2014-02-24T11:53:50-0800 - 128.00 B
+      neostore.relationshiptypestore.db: 2014-02-24T11:53:50-0800 - 0.00 B
+      neostore.propertystore.db.id: 2014-02-24T11:53:50-0800 - 9.00 B
+      store_lock: 2014-02-24T11:53:49-0800 - 0.00 B
+2014-02-24 19:56:16.227+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics START ---
+2014-02-24 19:56:16.259+0000 INFO  [org.neo4j]: Neo4j Kernel properties:
+    neostore.propertystore.db.mapped_memory=313M
+    neostore.nodestore.db.mapped_memory=86M
+    neostore.relationshipstore.db.mapped_memory=383M
+    neostore.propertystore.db.strings.mapped_memory=266M
+    store_dir=/home/fograinwind/workspace/neo4j/target/movieDB
+    neostore.propertystore.db.arrays.mapped_memory=301M
+    ephemeral=false
+2014-02-24 19:56:16.272+0000 INFO  [org.neo4j]: Diagnostics providers:
+    org.neo4j.kernel.configuration.Config
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    LINUX_SCHEDULERS
+    NETWORK
+2014-02-24 19:56:16.273+0000 INFO  [org.neo4j]: System memory information:
+    Total Physical memory: 3.87 GB
+    Free Physical memory: 2.47 GB
+    Committed virtual memory: 1.23 GB
+    Total swap space: 4.09 GB
+    Free swap space: 4.09 GB
+2014-02-24 19:56:16.292+0000 INFO  [org.neo4j]: JVM memory information:
+    Free  memory: 46.20 MB
+    Total memory: 59.94 MB
+    Max   memory: 958.94 MB
+    Garbage Collector: Copy: [Eden Space, Survivor Space]
+    Garbage Collector: MarkSweepCompact: [Eden Space, Survivor Space, Tenured Gen, Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=463.25 kB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: Eden Space (Heap memory): committed=16.50 MB, used=13.73 MB, max=264.50 MB, threshold=?
+    Memory Pool: Survivor Space (Heap memory): committed=2.06 MB, used=0.00 B, max=33.06 MB, threshold=?
+    Memory Pool: Tenured Gen (Heap memory): committed=41.38 MB, used=0.00 B, max=661.38 MB, threshold=0.00 B
+    Memory Pool: Perm Gen (Non-heap memory): committed=20.75 MB, used=6.06 MB, max=82.00 MB, threshold=0.00 B
+2014-02-24 19:56:16.302+0000 INFO  [org.neo4j]: Operating system information:
+    Operating System: Linux; version: 3.2.0-4-amd64; arch: amd64; cpus: 1
+    Max number of file descriptors: 4096
+    Number of open file descriptors: 29
+    Process id: 3489@crunchbang
+    Byte order: LITTLE_ENDIAN
+    Local timezone: US/Pacific
+2014-02-24 19:56:16.322+0000 INFO  [org.neo4j]: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 24.45-b08
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: [-Dfile.encoding=UTF-8]
+2014-02-24 19:56:16.323+0000 INFO  [org.neo4j]: Java classpath:
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/neo4j-shell-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/jce.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/parboiled-scala_2.10-1.1.6.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/neo4j-graph-matching-2.0.1.jar
+     [loader.1] file:/usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/ext/zipfs.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/neo4j-cypher-compiler-1.9-2.0.1.jar
+     [loader.1] file:/usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/ext/dnsns.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/bin/
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/neo4j-cypher-commons-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/concurrentlinkedhashmap-lru-1.3.1.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/neo4j-kernel-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/neo4j-graph-algo-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/commons-codec-1.9.jar
+     [loader.1] file:/usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/ext/sunjce_provider.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/javax.servlet.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/parboiled-core-1.1.6.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/scala-library-2.10.3.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/neo4j-server-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/neo4j-cypher-2.0.1.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/jfr.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/neo4j-jmx-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/neo4j-udc-2.0.1.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/rt.jar
+     [loader.1] file:/usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/ext/localedata.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/jsse.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/server-api-2.0.1.jar
+     [loader.1] file:/usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/ext/sunpkcs11.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/neo4j-cypher-compiler-2.0-2.0.1.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/classes
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/lucene-core-3.6.2.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/commons-httpclient-3.1.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/resources.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/charsets.jar
+     [loader.1] file:/usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/ext/sunec.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/neo4j-lucene-index-2.0.1.jar
+     [classpath + loader.0] file:/home/fograinwind/workspace/neo4j/lib/commons-logging-1.1.3.jar
+     [bootstrap] /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/sunrsasign.jar
+2014-02-24 19:56:16.325+0000 INFO  [org.neo4j]: Library path:
+    /usr/java/packages/lib/amd64
+    /usr/lib64
+    /lib64
+    /lib
+    /usr/lib
+2014-02-24 19:56:16.325+0000 INFO  [org.neo4j]: System.properties:
+    sun.boot.library.path = /usr/lib/jvm/java-7-oracle-1.7.0.45/jre/lib/amd64
+    path.separator = :
+    file.encoding.pkg = sun.io
+    user.country = US
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = unknown
+    user.dir = /home/fograinwind/workspace/neo4j
+    sun.jnu.encoding = UTF-8
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    user.home = /home/fograinwind
+    user.timezone = US/Pacific
+    file.encoding = UTF-8
+    user.name = fograinwind
+    sun.java.command = movieRecommendation.neo4j.CypherLoader
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = sun.awt.X11.XToolkit
+    file.separator = /
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.cpu.isalist = 
+2014-02-24 19:56:16.326+0000 INFO  [org.neo4j]: Linux scheduler information:
+    noop deadline [cfq] 
+    noop deadline [cfq] 
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+    none
+2014-02-24 19:56:16.344+0000 INFO  [org.neo4j]: Network information:
+    Interface eth0:
+        address: fe80:0:0:0:a00:27ff:fe23:c3a6%2
+        address: 10.0.2.15
+    Interface lo:
+        address: 0:0:0:0:0:0:0:1%1
+        address: 127.0.0.1
+2014-02-24 19:56:16.345+0000 INFO  [org.neo4j]: --- INITIALIZED diagnostics END ---
+2014-02-24 19:56:16.642+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db.names non clean shutdown detected
+2014-02-24 19:56:16.646+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=76b)
+2014-02-24 19:56:16.648+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db non clean shutdown detected
+2014-02-24 19:56:16.648+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=5b)
+2014-02-24 19:56:16.650+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db.names non clean shutdown detected
+2014-02-24 19:56:16.650+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=152b)
+2014-02-24 19:56:16.655+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db non clean shutdown detected
+2014-02-24 19:56:16.655+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=15b)
+2014-02-24 19:56:16.655+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.strings non clean shutdown detected
+2014-02-24 19:56:16.655+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.strings] brickCount=0 brickSize=278912b mappedMem=278921216b (storeSize=128b)
+2014-02-24 19:56:16.656+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.index.keys non clean shutdown detected
+2014-02-24 19:56:16.656+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=190b)
+2014-02-24 19:56:16.663+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.index non clean shutdown detected
+2014-02-24 19:56:16.663+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=36b)
+2014-02-24 19:56:16.664+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.arrays non clean shutdown detected
+2014-02-24 19:56:16.664+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.arrays] brickCount=0 brickSize=315520b mappedMem=315621376b (storeSize=128b)
+2014-02-24 19:56:16.672+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db non clean shutdown detected
+2014-02-24 19:56:16.673+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db] brickCount=10 brickSize=328164b mappedMem=328204288b (storeSize=3282009b)
+2014-02-24 19:56:16.675+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshipstore.db non clean shutdown detected
+2014-02-24 19:56:16.675+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshipstore.db] brickCount=0 brickSize=4016034b mappedMem=401604608b (storeSize=0b)
+2014-02-24 19:56:16.676+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.nodestore.db.labels non clean shutdown detected
+2014-02-24 19:56:16.676+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2014-02-24 19:56:16.677+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.nodestore.db non clean shutdown detected
+2014-02-24 19:56:16.677+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.nodestore.db] brickCount=10 brickSize=90174b mappedMem=90177536b (storeSize=901768b)
+2014-02-24 19:56:16.678+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.schemastore.db non clean shutdown detected
+2014-02-24 19:56:16.678+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=64b)
+2014-02-24 19:56:16.680+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore non clean shutdown detected
+2014-02-24 19:56:16.680+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=63b)
+2014-02-24 19:56:16.816+0000 INFO  [org.neo4j]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2014-02-24 19:56:16.923+0000 INFO  [org.neo4j]: Non clean shutdown detected on log [/home/fograinwind/workspace/neo4j/target/movieDB/nioneo_logical.log.1]. Recovery started ...
+2014-02-24 19:56:16.925+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/nioneo_logical.log.1] logVersion=0 with committed tx=1
+2014-02-24 19:56:17.173+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/nioneo_logical.log.1] entries found=113 lastEntryPos=6703
+2014-02-24 19:56:17.174+0000 INFO  [org.neo4j]: Opened logical log [/home/fograinwind/workspace/neo4j/target/movieDB/nioneo_logical.log.1] version=0, lastTxId=11 (recovered)
+2014-02-24 19:56:17.174+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] sorting 1 xids
+2014-02-24 19:56:17.174+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] checkRecoveryComplete 0 xids
+2014-02-24 19:56:17.238+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshiptypestore.db.names rebuild id generator, highId=2 defragged count=0
+2014-02-24 19:56:17.250+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db.names rebuild id generator, highId=4 defragged count=0
+2014-02-24 19:56:17.257+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.labeltokenstore.db rebuild id generator, highId=3 defragged count=0
+2014-02-24 19:56:17.261+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.index.keys rebuild id generator, highId=5 defragged count=0
+2014-02-24 19:56:17.265+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.index rebuild id generator, highId=4 defragged count=0
+2014-02-24 19:56:17.268+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.strings rebuild id generator, highId=1 defragged count=0
+2014-02-24 19:56:17.271+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db.arrays rebuild id generator, highId=1 defragged count=0
+2014-02-24 19:56:17.813+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.propertystore.db rebuild id generator, highId=38 defragged count=0
+2014-02-24 19:56:17.822+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.relationshipstore.db rebuild id generator, highId=1 defragged count=0
+2014-02-24 19:56:17.827+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.nodestore.db.labels rebuild id generator, highId=1 defragged count=0
+2014-02-24 19:56:18.002+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.nodestore.db rebuild id generator, highId=38 defragged count=0
+2014-02-24 19:56:18.007+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore.schemastore.db rebuild id generator, highId=1 defragged count=0
+2014-02-24 19:56:18.011+0000 INFO  [org.neo4j]: /home/fograinwind/workspace/neo4j/target/movieDB/neostore rebuild id generator, highId=7 defragged count=0
+2014-02-24 19:56:18.016+0000 INFO  [org.neo4j]: XaResourceManager[nioneo_logical.log] recovery completed.
+2014-02-24 19:56:18.016+0000 INFO  [org.neo4j]: Recovery on log [/home/fograinwind/workspace/neo4j/target/movieDB/nioneo_logical.log.1] completed.
+2014-02-24 19:56:18.034+0000 INFO  [org.neo4j]: Rebuilding lucene scan store, this may take a while
+2014-02-24 19:56:18.804+0000 INFO  [org.neo4j]: Lucene scan store rebuilt (roughly 64411 nodes)
+2014-02-24 19:56:18.807+0000 INFO  [org.neo4j]: TM opening log: /home/fograinwind/workspace/neo4j/target/movieDB/tm_tx_log.1
+2014-02-24 19:56:18.816+0000 INFO  [org.neo4j]: Non clean shutdown detected on log [/home/fograinwind/workspace/neo4j/target/movieDB/index/lucene.log.1]. Recovery started ...
+2014-02-24 19:56:18.816+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/index/lucene.log.1] logVersion=0 with committed tx=1
+2014-02-24 19:56:18.825+0000 INFO  [org.neo4j]: [/home/fograinwind/workspace/neo4j/target/movieDB/index/lucene.log.1] entries found=0 lastEntryPos=16
+2014-02-24 19:56:18.825+0000 INFO  [org.neo4j]: Opened logical log [/home/fograinwind/workspace/neo4j/target/movieDB/index/lucene.log.1] version=0, lastTxId=-1 (recovered)
+2014-02-24 19:56:18.825+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] sorting 0 xids
+2014-02-24 19:56:18.825+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] checkRecoveryComplete 0 xids
+2014-02-24 19:56:18.825+0000 INFO  [org.neo4j]: XaResourceManager[lucene.log] recovery completed.
+2014-02-24 19:56:18.825+0000 INFO  [org.neo4j]: Recovery on log [/home/fograinwind/workspace/neo4j/target/movieDB/index/lucene.log.1] completed.
+2014-02-24 19:56:18.837+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2014-02-24 19:56:18.837+0000 INFO  [org.neo4j]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1393271629625, id:-230417281327537827, store version: 13843131341501958]
+2014-02-24 19:56:18.837+0000 INFO  [org.neo4j]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.0.1
+2014-02-24 19:56:18.837+0000 INFO  [org.neo4j]: Neo4j component versions:
+2014-02-24 19:56:18.843+0000 INFO  [org.neo4j]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:56:18.848+0000 INFO  [org.neo4j]:   Neo4j - JMX support (neo4j-jmx), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:56:18.848+0000 INFO  [org.neo4j]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:56:18.848+0000 INFO  [org.neo4j]:   Neo4j Server API (server-api), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:56:18.848+0000 INFO  [org.neo4j]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:56:18.848+0000 INFO  [org.neo4j]:   Neo4j - Cypher (neo4j-cypher), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:56:18.848+0000 INFO  [org.neo4j]:   Neo4j Server (neo4j-server), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:56:18.848+0000 INFO  [org.neo4j]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:56:18.849+0000 INFO  [org.neo4j]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:56:18.849+0000 INFO  [org.neo4j]:   Neo4j - Generic shell (neo4j-shell), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:56:18.849+0000 INFO  [org.neo4j]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:56:18.849+0000 INFO  [org.neo4j]:   neo4j-udc, version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:56:18.849+0000 INFO  [org.neo4j]:   Neo4j - Cypher Commons (neo4j-cypher-commons), version: 2.0.1; revision: 2.0.1:master:878/8bb63c9c059d8a491b7909e08da86a820c28d3a5
+2014-02-24 19:56:18.849+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2014-02-24 19:56:18.867+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2014-02-24 19:56:18.868+0000 INFO  [org.neo4j]: Store versions:
+    Store versions:
+      NeoStore v0.A.1
+      SchemaStore v0.A.1
+      NodeStore v0.A.1
+      RelationshipStore v0.A.1
+      RelationshipTypeStore v0.A.1
+      LabelTokenStore v0.A.1
+      PropertyStore v0.A.1
+      PropertyIndexStore v0.A.1
+      StringPropertyStore v0.A.1
+      ArrayPropertyStore v0.A.1
+2014-02-24 19:56:18.868+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2014-02-24 19:56:18.868+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2014-02-24 19:56:18.868+0000 INFO  [org.neo4j]: Id usage:
+    Id usage:
+      SchemaStore: used=1 high=0
+      NodeStore: used=64412 high=64411
+      RelationshipStore: used=1 high=0
+      RelationshipTypeStore: used=1 high=0
+      LabelTokenStore: used=3 high=2
+      PropertyStore: used=80049 high=80048
+      PropertyIndexStore: used=4 high=3
+      StringPropertyStore: used=1 high=0
+      ArrayPropertyStore: used=1 high=0
+2014-02-24 19:56:18.876+0000 INFO  [org.neo4j]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2014-02-24 19:56:18.879+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2014-02-24 19:56:18.879+0000 INFO  [org.neo4j]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2014-02-24 19:56:18.880+0000 INFO  [org.neo4j]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2014-02-24 19:56:18.880+0000 INFO  [org.neo4j]: Disk space on partition (Total / Free / Free %): 101360168960 / 92064907264 / 90
+Storage files: (filename : modification date - size)
+      neostore.relationshiptypestore.db.names: 2014-02-24T11:56:17-0800 - 76.00 B
+      neostore.id: 2014-02-24T11:56:18-0800 - 9.00 B
+      neostore.nodestore.db.labels.id: 2014-02-24T11:56:17-0800 - 9.00 B
+      neostore.relationshipstore.db.id: 2014-02-24T11:56:17-0800 - 9.00 B
+      neostore.labeltokenstore.db.names.id: 2014-02-24T11:56:17-0800 - 9.00 B
+      neostore.propertystore.db: 2014-02-24T11:56:17-0800 - 3.13 MB
+      neostore.relationshiptypestore.db.names.id: 2014-02-24T11:56:17-0800 - 9.00 B
+      neostore.labeltokenstore.db.id: 2014-02-24T11:56:17-0800 - 9.00 B
+      neostore.propertystore.db.arrays: 2014-02-24T11:53:50-0800 - 128.00 B
+      schema:
+        label:
+          lucene:
+            _1.tis: 2014-02-24T11:56:17-0800 - 52.00 B
+            _2.tii: 2014-02-24T11:56:18-0800 - 35.00 B
+            _2.nrm: 2014-02-24T11:56:18-0800 - 4.00 B
+            _2.fdx: 2014-02-24T11:56:18-0800 - 20.00 B
+            _1.tii: 2014-02-24T11:56:17-0800 - 35.00 B
+            _1.frq: 2014-02-24T11:56:17-0800 - 5.00 B
+            _1.nrm: 2014-02-24T11:56:17-0800 - 4.00 B
+            _2.fdt: 2014-02-24T11:56:18-0800 - 32.00 B
+            segments.gen: 2014-02-24T11:56:17-0800 - 20.00 B
+            _1.fnm: 2014-02-24T11:56:17-0800 - 26.00 B
+            _1.fdt: 2014-02-24T11:56:17-0800 - 32.00 B
+            _1.fdx: 2014-02-24T11:56:17-0800 - 20.00 B
+            _2.tis: 2014-02-24T11:56:18-0800 - 52.00 B
+            _2.frq: 2014-02-24T11:56:18-0800 - 5.00 B
+            _2.fnm: 2014-02-24T11:56:18-0800 - 26.00 B
+            write.lock: 2014-02-24T11:56:16-0800 - 0.00 B
+            segments_1: 2014-02-24T11:56:17-0800 - 246.00 B
+          - Total: 2014-02-24T11:56:18-0800 - 614.00 B
+        - Total: 2014-02-24T11:56:16-0800 - 614.00 B
+      - Total: 2014-02-24T11:53:50-0800 - 614.00 B
+      neostore.nodestore.db.id: 2014-02-24T11:56:18-0800 - 9.00 B
+      neostore.propertystore.db.strings.id: 2014-02-24T11:56:17-0800 - 9.00 B
+      neostore.relationshiptypestore.db.id: 2014-02-24T11:56:17-0800 - 9.00 B
+      neostore.nodestore.db: 2014-02-24T11:56:18-0800 - 968.67 kB
+      messages.log: 2014-02-24T11:56:18-0800 - 45.51 kB
+      neostore.propertystore.db.index: 2014-02-24T11:56:17-0800 - 36.00 B
+      neostore.propertystore.db.index.id: 2014-02-24T11:56:17-0800 - 9.00 B
+      neostore.labeltokenstore.db: 2014-02-24T11:56:17-0800 - 15.00 B
+      neostore.labeltokenstore.db.names: 2014-02-24T11:56:17-0800 - 152.00 B
+      tm_tx_log.1: 2014-02-24T11:56:18-0800 - 0.00 B
+      neostore.schemastore.db: 2014-02-24T11:53:50-0800 - 64.00 B
+      active_tx_log: 2014-02-24T11:53:50-0800 - 11.00 B
+      neostore.nodestore.db.labels: 2014-02-24T11:53:50-0800 - 68.00 B
+      nioneo_logical.log.active: 2014-02-24T11:53:50-0800 - 4.00 B
+      neostore.schemastore.db.id: 2014-02-24T11:56:18-0800 - 9.00 B
+      neostore.propertystore.db.arrays.id: 2014-02-24T11:56:17-0800 - 9.00 B
+      index:
+        lucene.log.active: 2014-02-24T11:53:50-0800 - 4.00 B
+        lucene-store.db: 2014-02-24T11:56:18-0800 - 40.00 B
+        lucene.log.1: 2014-02-24T11:53:50-0800 - 16.00 B
+      - Total: 2014-02-24T11:53:50-0800 - 60.00 B
+      neostore: 2014-02-24T11:56:18-0800 - 63.00 B
+      neostore.relationshipstore.db: 2014-02-24T11:53:50-0800 - 0.00 B
+      lock: 2014-02-24T11:53:50-0800 - 0.00 B
+      neostore.propertystore.db.index.keys: 2014-02-24T11:56:17-0800 - 190.00 B
+      nioneo_logical.log.1: 2014-02-24T11:56:17-0800 - 6.55 kB
+      neostore.propertystore.db.index.keys.id: 2014-02-24T11:56:17-0800 - 9.00 B
+      neostore.propertystore.db.strings: 2014-02-24T11:53:50-0800 - 128.00 B
+      neostore.relationshiptypestore.db: 2014-02-24T11:56:17-0800 - 5.00 B
+      neostore.propertystore.db.id: 2014-02-24T11:56:17-0800 - 9.00 B
+      store_lock: 2014-02-24T11:53:49-0800 - 0.00 B

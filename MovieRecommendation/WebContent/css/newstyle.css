@@ -1,0 +1,75 @@
+
+
+/* CSS Document */
+
+body{background-image:url("./images/bg_image.jpg");
+background-repeat:repeat-x;}
+
+#container{width:950px; left:200px; position:absolute; display:inline-block;
+padding:5px 10px 6px; text-decoration:none;
+border-radius:5px; -moz-border-radius:5px;
+-webkit-border-radius:5px;
+-moz-box-shadow:0 1px 2px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+text-shadow:0 -1px 1px rgba(0,0,0,0.25);
+border-bottom: 1px solid rgba(0,0,0,0.25);
+ cursor:pointer;
+}
+
+#movieContainer{width:950px; left:200px; position:absolute; display:inline-block;
+padding:5px 10px 6px; text-decoration:none;
+border-radius:5px; -moz-border-radius:5px;
+-webkit-border-radius:5px;
+-moz-box-shadow:0 1px 2px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+border-bottom: 1px solid rgba(0,0,0,0.25);
+ cursor:pointer;
+}
+
+
+#below{width:950px;left:50px; position:absolute; top:380px;align:center;}
+#welcome{width:950px;left:50px;position:absolute; padding-top:10px;align:center;}
+
+#footer{width:950px;left:5px;position:absolute; top:70px;align:center;text-align:center;
+ 
+  font-size: 12px;
+  padding: 10px;
+  clear:both;}
+  #footer img {
+  padding: 5px;
+}
+#info{width:950px;left:50px;position:absolute; top:220px;align:center;
+  font-size: 12px;}
+
+
+#movieFrame{width:950px; left:50px;position:absolute;top:40px}
+#movieFact{width:950px; left:240px;position:absolute;top:5px}
+
+#movieCast{width:950px; left:600px;position:absolute;top:50px}
+#movieSimilar{width:950px; left:50px;position:absolute;top:420px}
+
+#movieListFrame{width:950px; left:5px;position:absolute;top:40px}
+#userFact{width:950px; left:180px;position:absolute;top:5px}
+#movieRecom{width:950px; left:450px;position:absolute;top:10px}
+h2{
+	font-size:2.2em; margin-bottom:0.3em; font-family:'Abril Fatface', Georgia, serif; font-weight:200; color:black; text-shadow: 1px 1px 1px rgba(0,0,0,0.4)
+}
+
+
+#search{width:950px; left:200px; position:absolute; margin:0 auto;top:10px}
+#searchbox{width:950px;left:250px; position:absolute; margin:0 auto;top:30px}
+#container{width:950px; position:absolute; margin:0 auto;padding-top:10px}
+
+#welcome{left:200px;margin:0 auto;position:absolute;}
+#order{position:absolute;top:130px; }
+#searchOrder{position:absolute;top:130px; left:70px;}
+#mainMenu{position:absolute;top:230px;}
+#checkFrame{position:absolute;top:180px; left:680px;}
+#centerFrame{position:absolute;left:100px;padding-top:10px}
+#manageFrame{position:absolute;left:100px;padding-top:50px}
+#mainFrame{position:absolute;left:300px;padding-top:35px}
+.btn_1{position:absolute;margin:0 auto;top:180px; left:0px;}
+.btn_2{position:absolute;margin:0 auto;top:180px;  left:70px;}
+.btn_3{position:absolute;margin:0 auto;top:180px; left: 140px;}
+.btn_4{position:absolute;margin:0 auto;top:180px; left: 210px;}
+h4{font-weight: bolder}

@@ -1,0 +1,2 @@
+MATCH (me:User {userId:"4"}),(movie:Movie {title:"Casino (1995)"})
+CREATE (me)-[r:rated {stars : 5, comment : "I love that movie!"}]->(movie) return r;
